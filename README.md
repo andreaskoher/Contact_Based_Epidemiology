@@ -2,11 +2,11 @@
 
 We provide a package that integrates the contact-based model for SIR type of epidemic spreading given a time-stamped edgelist. For details see:
 
-   Koher et al. [**Contact-based model for epidemic spreading on temporal networks**](https://arxiv.org/abs/1811.05809) Arxive 1811.05809, (2018)
+*Koher et al. [**Contact-based model for epidemic spreading on temporal networks**](https://arxiv.org/abs/1811.05809) Arxive 1811.05809, (2018*
 
 The algorithm is based on the dynamic message passing framework introduced for static networks in:  
 
-   Lokhov et al. [**Inferring the origin of an epidemic with a dynamic message-passing algorithm**](https://arxiv.org/abs/1303.5315), Phys. Rev. E 90, 1, 012801 (2014)
+*Lokhov et al. [**Inferring the origin of an epidemic with a dynamic message-passing algorithm**](https://arxiv.org/abs/1303.5315), Phys. Rev. E 90, 1, 012801 (2014*
 
 The contact-based model allows to calculate the marginal probability to find a node in the susceptible, infected or, recovered state over time. We assume a standard non-Markovian SIR model and given a time-varying topology the function `integrate_contact_based_model` integrates the contagion process. Unlike previous approaches that focused on nodes - the individual-based (IB) approach - and thus approximated the marginal probability directly, we propose edges as central objects in the contact-based (CB) model. The shift allows to improve analytical predictions with respect to Monte-Carlo simulations as analysed in [*Koher et al.*](https://arxiv.org/abs/1811.05809).
 
